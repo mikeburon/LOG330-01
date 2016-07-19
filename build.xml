@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project name="tp1_-_burm22039207" default="all">
+<project name="TP1 - BURM22039207" default="all">
   
   
   <property file="build.properties"/>
@@ -9,7 +9,7 @@
    -->
   
   <!-- Compiler options -->
-  <!--
+
   <property name="compiler.debug" value="on"/>
   <property name="compiler.generate.no.warnings" value="off"/>
   <property name="compiler.args" value=""/>
@@ -56,7 +56,7 @@
     <exclude name="**/?*.aj"/>
   </patternset>
 
-  &lt;!&ndash; JDK definitions &ndash;&gt;
+  <!-- JDK definitions -->
 
   <property name="jdk.bin.1.8" value="${jdk.home.1.8}/bin"/>
   <path id="jdk.classpath.1.8">
@@ -90,7 +90,7 @@
   <property name="project.jdk.home" value="${jdk.home.1.8}"/>
   <property name="project.jdk.bin" value="${jdk.bin.1.8}"/>
   <property name="project.jdk.classpath" value="jdk.classpath.1.8"/>
-  &lt;!&ndash; Register Custom Compiler Taskdefs &ndash;&gt;
+  <!-- Register Custom Compiler Taskdefs -->
   <property name="javac2.home" value="${idea.home}/lib"/>
   <path id="javac2.classpath">
     <pathelement location="${javac2.home}/javac2.jar"/>
@@ -103,10 +103,10 @@
     <taskdef name="instrumentIdeaExtensions" classname="com.intellij.ant.InstrumentIdeaExtensions" classpathref="javac2.classpath"/>
   </target>
 
-  &lt;!&ndash; Modules &ndash;&gt;
+  <!-- Modules -->
 
 
-  &lt;!&ndash; Module TP1 &ndash;&gt;
+  <!-- Module TP1 -->
 
   <dirname property="module.tp1.basedir" file="${ant.file}"/>
 
@@ -121,7 +121,7 @@
   <property name="tp1.testoutput.dir" value="${module.tp1.basedir}/out/test/TP1"/>
 
   <path id="tp1.module.bootclasspath">
-    &lt;!&ndash; Paths to be included in compilation bootclasspath &ndash;&gt;
+    <!-- Paths to be included in compilation bootclasspath -->
   </path>
 
   <path id="tp1.module.production.classpath">
@@ -216,12 +216,12 @@
   </target>
 
   <target name="init" description="Build initialization">
-    &lt;!&ndash; Perform any build initialization in this target &ndash;&gt;
+    <!-- Perform any build initialization in this target -->
   </target>
 
   <target name="clean" depends="clean.module.tp1" description="cleanup all"/>
 
   <target name="build.modules" depends="init, clean, compile.module.tp1" description="build all modules"/>
 
-  <target name="all" depends="build.modules" description="build all"/>-->
+  <target name="all" depends="build.modules" description="build all"/>
 </project>
