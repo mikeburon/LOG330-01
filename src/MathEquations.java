@@ -52,13 +52,13 @@ public class MathEquations {
         double avgX,avgY,stdX,stdY;
 
         //initialisation listX
-        LinkedList<Double> listX = new LinkedList<>();
+        LinkedList<Double> listX = new LinkedList();
         for(int i =0;i<list.size();i++){
             listX.add(list.get(i)[0]);
         }
 
         //initialisation listY
-        LinkedList<Double> listY = new LinkedList<>();
+        LinkedList<Double> listY = new LinkedList();
         for(int i =0;i<list.size();i++){
             listY.add(list.get(i)[1]);
         }
@@ -129,8 +129,8 @@ public class MathEquations {
         double var,std;
         double toSquare2 =0;
 
-        LinkedList<Double> listX = new LinkedList<>();
-        LinkedList<Double> listY = new LinkedList<>();
+        LinkedList<Double> listX = new LinkedList();
+        LinkedList<Double> listY = new LinkedList();
 
         for(int i=0;i<list.size();i++){
             double x,y;

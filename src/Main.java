@@ -27,7 +27,7 @@ public class Main {
         String filePath = scanner.nextLine().trim();
         reader.read(filePath);
         LinkedList<String[]> listCSV = reader.getList();
-        LinkedList<Double[]> listXY = new LinkedList<>();
+        LinkedList<Double[]> listXY = new LinkedList();
 
 
         if (listCSV.size() != 0){
