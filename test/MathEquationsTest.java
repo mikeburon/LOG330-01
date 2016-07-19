@@ -36,11 +36,7 @@ public class MathEquationsTest {
         assertEquals(4,distance,0);
     }
 
-    @Test
-    public void variance() throws Exception {
-        double variance = MathEquations.variance(list);
-        assertEquals(0.5,variance,0);
-    }
+
 
     @Test
     public void calculateIntercept() throws Exception {
