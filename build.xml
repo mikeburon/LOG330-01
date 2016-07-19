@@ -165,11 +165,11 @@
     </dirset>
   </path>
   
-  <path id="tp1.module.test.sourcepath">
-    <dirset dir="${module.tp1.basedir}">
-      <include name="Tests"/>
-    </dirset>
-  </path>
+  <!--<path id="tp1.module.test.sourcepath">-->
+    <!--<dirset dir="${module.tp1.basedir}">-->
+      <!--<include name="tests"/>-->
+    <!--</dirset>-->
+  <!--</path>-->
   
   
   <target name="compile.module.tp1" depends="compile.module.tp1.production,compile.module.tp1.tests" description="Compile module TP1"/>
