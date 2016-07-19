@@ -4,9 +4,9 @@
   
   <property file="build.properties"/>
   <!-- Uncomment the following property if no tests compilation is needed -->
-  <!-- 
+
   <property name="skip.tests" value="true"/>
-   -->
+
   
   <!-- Compiler options -->
   
@@ -118,7 +118,7 @@
   <property name="compiler.args.tp1" value="-encoding UTF-8 -source 8 -target 8 ${compiler.args}"/>
   
   <property name="tp1.output.dir" value="${module.tp1.basedir}/out/production/TP1"/>
-  <property name="tp1.testoutput.dir" value="${module.tp1.basedir}/Tests/"/>
+  <property name="tp1.testoutput.dir" value="${module.tp1.basedir}/out/test/TP1"/>
   
   <path id="tp1.module.bootclasspath">
     <!-- Paths to be included in compilation bootclasspath -->
