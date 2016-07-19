@@ -18,7 +18,7 @@ public class TestCorrelation {
 
     @Before
     public void setUp(){
-        list = new LinkedList<Double[]>();
+        list = new LinkedList();
         list.add(new Double[]{(double)186,(double)15});
         list.add(new Double[]{(double)699,69.9});
         list.add(new Double[] {132.0,65.});
@@ -43,13 +43,13 @@ public class TestCorrelation {
         double avgX,avgY,stdX,stdY;
 
         //initialisation listX
-        LinkedList<Double> listX = new LinkedList<>();
+        LinkedList<Double> listX = new LinkedList();
         for(int i =0;i<list.size();i++){
             listX.add(list.get(i)[0]);
         }
 
         //initialisation listY
-        LinkedList<Double> listY = new LinkedList<>();
+        LinkedList<Double> listY = new LinkedList();
         for(int i =0;i<list.size();i++){
             listY.add(list.get(i)[1]);
         }

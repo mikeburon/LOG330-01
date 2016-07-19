@@ -16,7 +16,7 @@ public class TestRegressionLineaire {
 
     @Before
     public void setUp(){
-        list2 = new LinkedList<>();
+        list2 = new LinkedList();
         list2.add(new Double[]{(double)1,(double)1});
         list2.add(new Double[]{(double)2,(double)2});
         slope = MathEquations.calculateSlope(list2);

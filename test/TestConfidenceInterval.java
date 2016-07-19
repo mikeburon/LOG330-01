@@ -22,7 +22,7 @@ public class TestConfidenceInterval {
     @Before
     public void setUp() {
 
-        list = new LinkedList<>();
+        list = new LinkedList();
         list.add(new Double[]{(double) 1, (double) 2.5});
         list.add(new Double[]{(double) 3, (double) 6.25});
         list.add(new Double[]{8.0, 16.5});

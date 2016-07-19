@@ -16,7 +16,7 @@ public class TestVariance {
 
     @Before
     public void setUp(){
-        list = new LinkedList<>();
+        list = new LinkedList();
         list.add((double)1);
         list.add((double)2);
     }

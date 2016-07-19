@@ -19,13 +19,13 @@ public class TestEffortVsNote {
     @Before
     public void setUp(){
 
-        list = new LinkedList<>();
+        list = new LinkedList();
         list.add(new Double[]{(double)1,(double)1});
         list.add(new Double[]{(double)2,(double)2});
         list.add(new Double[]{3.0,3.0});
         correlation = MathEquations.correlation(list);
 
-        list2 = new LinkedList<>();
+        list2 = new LinkedList();
         list2.add(new Double[]{(double)1,(double)1});
         list2.add(new Double[]{(double)5,(double)120});
         list2.add(new Double[]{-43.0,3.0});
